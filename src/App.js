@@ -4,6 +4,7 @@ import StudentList from "./components/StudentList";
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
 import Container from "react-bootstrap/Container";
+import Login from "./components/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MyAlert from "./components/MyAlert";
 import { useState } from "react";
@@ -36,6 +37,10 @@ function App() {
             <Route
               path="listStudents"
               element={<StudentList showAlert={showAlert} />}
+            />
+            <Route
+              path="login"
+              element={<Login showAlert={showAlert} />}
             />
           </Routes>
         </Container>
